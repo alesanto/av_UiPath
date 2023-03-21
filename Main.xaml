@@ -1,0 +1,574 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1219,1024" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="868,965" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="826,877" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="ui:Browser" Name="var_navCasasBahia" />
+        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="var_dtReviewJogos" />
+      </Flowchart.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+          <av:Size x:Key="ShapeSize">60,75</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
+          <x:Double x:Key="Height">840.5</x:Double>
+          <x:Double x:Key="Width">792.5</x:Double>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID4</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">199.5,258.5</av:Point>
+            <av:Size x:Key="ShapeSize">201,112</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,370.5 300,429.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence sap2010:Annotation.AnnotationText="Acessa o site das casas bahia" DisplayName="sq_acessar_site" sap:VirtualizedContainerService.HintSize="201,112" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="var_strUrlCasasBahia" />
+            <Variable x:TypeArguments="x:Int32" Name="var_intCont" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="618,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+            <ui:MultipleAssign.AssignOperations>
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:Int32">[var_intCont]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[var_strUrlCasasBahia]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">https://www.casasbahia.com.br</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+              </scg:List>
+            </ui:MultipleAssign.AssignOperations>
+          </ui:MultipleAssign>
+          <TryCatch DisplayName="Try Catch - Abrir Navegador" sap:VirtualizedContainerService.HintSize="618,959" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="var_boolCampoPesquisa" />
+            </TryCatch.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch.Try>
+              <ui:RetryScope DisplayName="Retry Scope - Abrir site casas bahia" sap:VirtualizedContainerService.HintSize="580,731" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:05">
+                <ui:RetryScope.ActivityBody>
+                  <ActivityAction>
+                    <Sequence DisplayName="Ação" sap:VirtualizedContainerService.HintSize="538,464" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="sq_Processo_abertura_site" sap:VirtualizedContainerService.HintSize="496,376" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process - Mata os processos do chrome" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:KillProcess>
+                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Abrir site Casas Bahia " sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" OutUiElement="[var_navCasasBahia]" ScopeGuid="04d684c0-dd46-4d53-aa80-b7cc43e31c09" Version="V2" WindowResize="Maximize">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,199" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message - abrindo site" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Abrindo site das Casas Bahia - Tentativa: &quot; + var_intCont.ToString]" />
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="1e6e161110d477115f04d7ca78eb5c04.jpg" Selector="&lt;html app='chrome.exe' title='Casas Bahia | Cupom de 10%, 15% e 20% de desconto' /&gt;" Url="[var_strUrlCasasBahia]" />
+                          </uix:NApplicationCard.TargetApp>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NApplicationCard>
+                        <Assign DisplayName="Assign - Aumentar contador" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[var_intCont]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[var_intCont + 1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:RetryScope.ActivityBody>
+                <ui:RetryScope.Condition>
+                  <ActivityFunc x:TypeArguments="x:Boolean">
+                    <ui:UiElementExists DisplayName="Element Exists - Verifica se o campo de pesquisa carregou" Exists="[var_boolCampoPesquisa]" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4364f283-e9b4-4728-87d5-a4349e1f684c" InformativeScreenshot="1ae0ea78c8a3c4ea0e83e86a48ad6d1d" Selector="&lt;html app='chrome.exe' title='Casas Bahia*' /&gt;&lt;webctrl id='search_label' parentclass='search_bar' parentid='formBusca' /&gt;" TimeoutMS="5000" WaitForReady="NONE" />
+                      </ui:UiElementExists.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:UiElementExists>
+                  </ActivityFunc>
+                </ui:RetryScope.Condition>
+              </ui:RetryScope>
+            </TryCatch.Try>
+            <TryCatch.Catches>
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="584,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ActivityAction x:TypeArguments="s:Exception">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,287" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message - Site fora do ar" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;ERRO: Site fora do ar&quot;]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:LogMessage>
+                    <Throw DisplayName="Throw - Lança uma exceção de sistema" Exception="[New System.Exception (&quot;ERRO: Site fora do ar&quot;)]" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="Throw_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Throw>
+                  </Sequence>
+                </ActivityAction>
+              </Catch>
+            </TryCatch.Catches>
+          </TryCatch>
+          <ui:LogMessage DisplayName="Log Message - Site aberto com suscesso" sap:VirtualizedContainerService.HintSize="618,107" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Site aberto com sucesso&quot;]" />
+        </Sequence>
+        <FlowStep.Next>
+          <FlowStep x:Name="__ReferenceID0">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">199.5,429.5</av:Point>
+                <av:Size x:Key="ShapeSize">201,81</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">300,510.5 300,569.5</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="sq_pesquisar_jogos" sap:VirtualizedContainerService.HintSize="201,81" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,447" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InUiElement="[var_navCasasBahia]" OpenMode="Never" OutUiElement="[var_navCasasBahia]" ScopeGuid="edeca3a9-183b-4d69-b890-d9223206f359" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,310" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Buscar'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="edeca3a9-183b-4d69-b890-d9223206f359" Text="Jogos de Playstation[k(enter)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.casasbahia.com.br/" DesignTimeRectangle="589, 254, 605, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT strBusca'" FullSelectorArgument="&lt;webctrl id='strBusca' tag='INPUT' name='strBusca' parentclass='search_bar' parentid='search_label' /&gt;" FuzzySelectorArgument="&lt;webctrl id='strBusca' tag='INPUT' type='text' class='fitext' aaname='             Buscar                        ' /&gt;" Guid="c89d2030-a1f6-4cab-926d-b93b81e722b0" ImageBase64="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" InformativeScreenshot="9cf58dfecdd0c915874a6e57788e97e0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Casas Bahia | Cupom de 10%, 15% e 20% de desconto' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="589, 251, 637, 44" ElementType="Text" FriendlyName="'Buscar'" FullSelectorArgument="&lt;webctrl id='search_label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search_label' tag='LABEL' type='' class='' aaname='                                     ' check:innerText='Buscar' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <FlowStep.Next>
+              <FlowStep x:Name="__ReferenceID1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">199.5,569.5</av:Point>
+                    <av:Size x:Key="ShapeSize">201,81</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">300,650.5 300,689.5</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="sq_extrair_dados_jogos" sap:VirtualizedContainerService.HintSize="201,81" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="sq_extração_dados" sap:VirtualizedContainerService.HintSize="496,497" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Jogos de playstation" sap:VirtualizedContainerService.HintSize="434,386" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InUiElement="[var_navCasasBahia]" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="e3f65f98-08d7-418f-8967-062c0e419862" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,249" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[var_dtReviewJogos]" DisplayName="Extract Table Data - Extrair review jogos" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='nome_jogo' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='classificacao' ReferenceName='Column1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e3f65f98-08d7-418f-8967-062c0e419862" Version="V3">
+                              <uix:NExtractData.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="293, 87, 1334, 3951" DesignTimeScaleFactor="1" FriendlyName="'Você buscou'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" Guid="a0428fb9-5650-4f02-93ef-ebc1d909a8e4" InformativeScreenshot="df68864cc3ff505d6a8c223f8597c85e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.casasbahia.com.br/*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              </uix:NExtractData.Target>
+                            </uix:NExtractData>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="b6596188f0c8f34e76d2143d0ee8e38d.jpg" Selector="&lt;html app='chrome.exe' title='Jogos de playstation | Casas Bahia' /&gt;" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </Sequence>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">199.5,689.5</av:Point>
+                        <av:Size x:Key="ShapeSize">201,81</av:Size>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="sq_dividir_tabelas" sap:VirtualizedContainerService.HintSize="201,81" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="sd:DataTable" Name="var_dtMelhores" />
+                        <Variable x:TypeArguments="sd:DataTable" Name="var_dtPiores" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:BuildDataTable DataTable="[var_dtMelhores]" DisplayName="Build Data Table - Melhores" sap:VirtualizedContainerService.HintSize="527,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;nome_jogo&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;classificacao&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;nome_jogo&gt;text&lt;/nome_jogo&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                      <ui:BuildDataTable DataTable="[var_dtPiores]" DisplayName="Build Data Table - Piores" sap:VirtualizedContainerService.HintSize="527,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;nome_jogo&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;classificacao&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;nome_jogo&gt;text&lt;/nome_jogo&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[var_dtReviewJogos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="527,1155" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="493,1039" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:Int32" Name="var_intClassificacao" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:MultipleAssign DisplayName="Multiple Assign - Replace de caracteres" sap:VirtualizedContainerService.HintSize="451,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                                <ui:MultipleAssign.AssignOperations>
+                                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Object">[CurrentRow(1).ToString.Replace("(","")]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Object">[CurrentRow(1).ToString.Replace(")","")]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                  </scg:List>
+                                </ui:MultipleAssign.AssignOperations>
+                              </ui:MultipleAssign>
+                              <ui:IfElseIf DisplayName="If - Se valor de review maior que 40" sap:VirtualizedContainerService.HintSize="451,779" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                                <ui:IfElseIf.ConditionBlocks>
+                                  <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                    <ui:IfElseIfBlock BlockType="If" Condition="[Cint(var_intClassificacao) &gt;= 40]">
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,274" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[CurrentRow]" DataTable="[var_dtMelhores]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                    <ui:IfElseIfBlock BlockType="Else">
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,274" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[CurrentRow]" DataTable="[var_dtPiores]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                  </sc:BindingList>
+                                </ui:IfElseIf.ConditionBlocks>
+                              </ui:IfElseIf>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="527,107" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;STOP&quot;]" />
+                    </Sequence>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID0</x:Reference>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <FlowStep x:Name="__ReferenceID4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">199.5,127.5</av:Point>
+            <av:Size x:Key="ShapeSize">201,81</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,208.5 300,258.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="sq_criar_arquivo_xls" sap:VirtualizedContainerService.HintSize="201,81" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Boolean" Name="var_boolArquivoExcel" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:FileExistsX DisplayName="File Exists" Exists="[var_boolArquivoExcel]" sap:VirtualizedContainerService.HintSize="451,133" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="output\ReviewJogos.xlsx" />
+          <ui:IfElseIf DisplayName="if - Verifica se o arquivo excel existe na pasta do robô" sap:VirtualizedContainerService.HintSize="451,1106" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+            <ui:IfElseIf.ConditionBlocks>
+              <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                <ui:IfElseIfBlock BlockType="If" Condition="[var_boolArquivoExcel = True]">
+                  <ui:IfElseIfBlock.Then>
+                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,497" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:DeleteFileX DisplayName="Delete File - Deletar arquivo antigo" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="output\ReviewJogos.xlsx" />
+                      <ui:CreateFile ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create File - Criar arquivo novo" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="ReviewJogos.xls" Path="C:\Users\alex.santos\Documents\UiPath\av_UiPath_ExtracaoDados\output" />
+                      <ui:WriteRange AddHeaders="False" DataTable="[var_dtReviewJogos]" DisplayName="Write Range Workbook - Escrever arquivo excel" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Melhores" WorkbookPath="output\ReviewJogos.xlsx">
+                        <ui:WriteRange.StartingCell>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:WriteRange.StartingCell>
+                      </ui:WriteRange>
+                    </Sequence>
+                  </ui:IfElseIfBlock.Then>
+                </ui:IfElseIfBlock>
+                <ui:IfElseIfBlock BlockType="Else">
+                  <ui:IfElseIfBlock.Then>
+                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,377" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:CreateFile ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create File - Criar arquivo novo" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="CreateFile_2" Name="ReviewJogos.xls" Path="C:\Users\alex.santos\Documents\UiPath\av_UiPath_ExtracaoDados\output" />
+                      <ui:WriteRange AddHeaders="False" DataTable="[var_dtReviewJogos]" DisplayName="Write Range Workbook - Escrever arquivo excel" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Melhores" WorkbookPath="output\ReviewJogos.xlsx">
+                        <ui:WriteRange.StartingCell>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:WriteRange.StartingCell>
+                      </ui:WriteRange>
+                    </Sequence>
+                  </ui:IfElseIfBlock.Then>
+                </ui:IfElseIfBlock>
+              </sc:BindingList>
+            </ui:IfElseIf.ConditionBlocks>
+          </ui:IfElseIf>
+        </Sequence>
+        <FlowStep.Next>
+          <x:Reference>__ReferenceID2</x:Reference>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID3</x:Reference>
+    </Flowchart>
+  </Sequence>
+</Activity>
